@@ -37,10 +37,10 @@ npm run dev
 
 ## Usage/Examples
 
-![App Screenshot](./assets/screenshots/ColorSchemePicker.PNG)
+![App Screenshot](./src/assets/screenshots/ColorSchemePicker.PNG)
 
 ### App Demo
-![App Screenshot](./assets/screenshots/ColorSchemeGeneratorDemo.gif)
+![App Screenshot](./src/assets/screenshots/ColorSchemeGeneratorDemo.gif)
 
 
 ## License
