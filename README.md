@@ -48,8 +48,6 @@ npm run dev
 This project is licensed under the MIT License.  
 See the [License](./LICENSE) file for details.
 
-
-
 ## Acknowledgements/References
 
  - [Color API](https://www.thecolorapi.com/docs#schemes)
