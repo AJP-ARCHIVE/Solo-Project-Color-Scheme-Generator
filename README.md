@@ -3,7 +3,8 @@ A solo project completed after the 'Working with APIs' module on Scrimba. I buil
 
 The color scheme generator allows an user to select a color from the color picker and select a mode to generate 5 different color schemes, and copy a selected color's color code value (hex, rgb, hsl, cmyk).
 
-### Live Demo: [Color Scheme Generator](https://resonant-nasturtium-88a20f.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/74265e25-4988-4d94-a99c-6a24923f9e6f/deploy-status)](https://app.netlify.com/projects/solo-project-color-scheme/deploys)
+### Live Demo: [Color Scheme Generator](https://solo-project-color-scheme.netlify.app/)
 
 ## Tech Stack
 - React
