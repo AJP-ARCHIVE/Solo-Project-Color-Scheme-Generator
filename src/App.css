@@ -1,0 +1,189 @@
+main {
+  padding: 0.3125em;
+}
+
+.header {
+  padding: 0.3em;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 0.4rem;
+}
+
+.scheme-btn:hover, color-value:hover {
+  cursor: pointer;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.wrapper {
+  position: relative;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  width: 100%;
+  height: 100vh;
+}
+
+.color-container {
+  display: contents;
+}
+
+.color-box {
+  width: 100%;
+  height: 100%;
+}
+
+.color-code-container {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+}
+
+
+/* Make color code sit in the center of color box */
+.color-value {
+ width: max-content;
+ height: max-content;
+ margin: auto;
+ border: none;
+ background-color: transparent;
+ text-shadow: 0px 0px 2px #222;
+ color: #fff;
+ z-index: 1;
+}
+
+
+
+.color-value:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #222;
+  padding: 0.3125em 0.625em;
+}
+
+.code-selector {
+  width: 70px;
+}
+
+.color-picker {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1em;
+  color: #222;
+}
+
+.picker {
+  font-size: 0.75em;
+}
+
+  .copy-alert {
+  color: white;
+  padding: 0.326em;
+  height: 30px;
+  font-size: 0.75em;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* .header {
+    background-color: palegoldenrod;
+  } */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+   /* .header {
+    background-color: orange;
+  } */
+   #seed-color{
+    height: 1.875em;
+    width: 10%;
+    padding: 0;
+    border: none;
+}
+    #mode {
+    width: 30%;
+
+   }
+
+   button {
+    width: 30%;
+   }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+   /* .header {
+    background-color: greenyellow;
+  } */
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .header {
+    background-color: blue;
+  } 
+ .wrapper {
+  grid-template-columns: repeat(5, 1fr); /* 5 columns */
+  grid-template-rows: auto auto;         /* boxes row + color value row */
+  width: 100%;
+  height: 550px;
+}
+
+  .color-container {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: 550px;
+  }
+
+
+  .color-code-container {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 1.875em;
+  }
+
+  .color-value {
+    margin-top: -1.5625em;
+    border: none;
+    background-color: transparent;
+    color: black;
+    font-size: 0.85rem;
+  }
+
+  .color-value:hover {
+    color: darkgray;
+  }
+
+  .copy-alert {
+    color: #222;
+  }
+
+ 
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* .header {
+    background-color: plum;
+  } */
+  
+
+}
