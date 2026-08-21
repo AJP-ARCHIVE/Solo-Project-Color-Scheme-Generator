@@ -150,7 +150,7 @@ main {
   grid-row: 1;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  height: 600px;
+  height: 550px;
   }
 
 
