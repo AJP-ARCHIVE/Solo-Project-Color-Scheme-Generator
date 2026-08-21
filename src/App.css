@@ -134,10 +134,6 @@ main {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
-  .header {
-    padding-top: 1.875em;
-  }
-
  .wrapper {
   grid-template-columns: repeat(5, 1fr); /* 5 columns */
   grid-template-rows: auto auto;         /* boxes row + color value row */
