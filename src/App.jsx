@@ -14,7 +14,6 @@ export default function App() {
   // optional URI parameter of Color API
   const codes = ["hex", "rgb", "hsl", "cmyk"]
 
-  
 
   const [scheme, setScheme] = React.useState(null) // Color API results 
   const [code, setCode] = React.useState(codes[0]) // default -> 'hex'
@@ -25,17 +24,12 @@ export default function App() {
   const modeChoices = modes.map(mode => <option key={mode} value={mode}>{mode.charAt(0).toUpperCase() + mode.slice(1)}</option>)
 
 
-   
   // color format 'code' choices
   const codeChoices = codes.map(code => <option key={code} value={code}>{code}</option>)
 
 
 
   async function getColorScheme() {
-      //const seedColor = formData.get("color")
-      // console.log(`seed color is: ${seedColor}`)
-      // const mode = formData.get("mode")
-      // console.log(`mode is ${mode}`)
 
       try {
           const response = await fetch(`https://www.thecolorapi.com/scheme?hex=${seedColor.replace("#", "")}&mode=${mode}&count=5`)
@@ -87,25 +81,13 @@ export default function App() {
           </div>
 
             <div className="wrapper">
-              
-     
               <Colors scheme={scheme} />
-              
-              
-              
-              
               <ColorValue scheme={scheme} setScheme={setScheme} code={code} />
-              
            </div>
-     
-      
-
        </section>
        
      }
 
-
-       
     </main>
   )
 }
