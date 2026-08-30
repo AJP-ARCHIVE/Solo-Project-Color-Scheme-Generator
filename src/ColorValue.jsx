@@ -40,7 +40,6 @@ export default function ColorValue( { scheme, code } ) {
 
 
 
-  
     // conditional rendering of color picker value based on selected dropdown value { code } prop 
     const colorValueCode = scheme.map(color => {
         const colorCode = code === "rgb" ? color.rgb : code === "hsl" ? color.hsl : code === "hex" ? color.hex : color.cmyk
@@ -50,12 +49,8 @@ export default function ColorValue( { scheme, code } ) {
         // use id to find which color value was selected 
         const colorValueElement = color.id === selected.id && copied ? <CopyAlert key={color.id} copiedValue={copiedValue}/>  : <button key={color.id} className="color-value" onClick={(e) => copyColorValue(e, color.id)}>{colorCode}</button>
 
-   
-
         return (
-            colorValueElement
-            
-            
+            colorValueElement        
         )
     })
 
@@ -63,18 +58,10 @@ export default function ColorValue( { scheme, code } ) {
     return (
         <>
         
-
         <section className="color-code-container">
-   
-    
             {colorValueCode} 
-            
         </section>
          
-    
-
-
-    
         </>
     )
 }
